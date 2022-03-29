@@ -1,0 +1,651 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind', sans-serif;
+}
+
+html{
+    font-size: 15px;
+}
+
+.inner{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.flex-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/1920x1080/01.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+.my-btn{
+    width: 10rem;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 5px;
+    font-family: 'Hind', sans-serif;
+}
+
+/* navigation starts */
+nav{
+    border-bottom: 1px solid #fff;
+}
+
+.mynavbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+.mynavbar .logo{
+    width: 20%;
+}
+
+.mynavbar .logo img{
+    width: 100%;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+nav ul li{
+    margin-right: 2.5rem;
+}
+
+nav ul li:last-child{
+    margin-right: 0rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover, nav ul li a:focus{
+    color: #e80304;
+}
+
+header .mynavbar button{
+    width: 2.5rem;
+    height: 2.5rem;
+    background: none;
+    border: 1px solid #fff;
+    float: right; 
+    margin-top: -1.5%;
+    display: none;
+}
+
+header .mynavbar .fa{
+    color: #20dfe6;
+    font-size: 2rem;
+}
+
+/* navigation ends */
+
+/* navigation media query */
+
+@media (max-width:992px){
+    nav{
+        background-color: #fff;
+    }
+
+    header .mynavbar button{
+        display: block;
+    }
+
+    nav  ul{
+        display: none;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        margin-right: 0;
+        background-color: #fff;
+        width: 100%;
+    }
+
+    nav ul li{
+        padding: 0.5rem 0;
+        padding-left: 13%;
+    }
+
+    nav ul li a{
+        font-size: 1rem;
+        text-align: center;
+        color: gray;
+        font-weight: 600;
+    }
+
+    nav ul li a:hover{
+        color: #e80304;
+    }
+
+    .my-btn{
+        width: 9rem;
+        height: 2.5rem;
+    }
+    
+}
+
+@media (max-width:768px){
+
+    nav ul li a{
+        font-size: 0.9rem;
+    }
+
+    header .mynavbar .fa{
+        font-size: 1.8rem;
+    }    
+}
+
+@media (max-width:576px){
+    header .mynavbar .fa{
+        font-size: 1.5rem;
+    } 
+}
+
+@media (max-width:376px){
+    nav ul li a{
+        font-size: 0.5rem;
+    }
+
+    header .mynavbar .fa{
+        font-size: 1rem;
+    } 
+}
+
+/* headings starts */
+.headings{
+    margin-top: 20%;
+}
+
+.headings h1{
+    font-size: 4rem;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.headings p{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.headings button{
+    background: none;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    margin-top: 5rem;
+    color: #fff;
+}
+
+.headings button:hover{
+    background-color: #fd871f;
+    border: none;
+    color: #343434;
+    transition:0.3s ease-in;
+}
+
+
+/* team */
+.team{
+    margin: 6rem 0;
+}
+
+.team .team-member{
+    width: 31%;
+}
+
+.team .team-member img{
+    width: 100%;
+}
+
+.team .team-member h2{
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #3a4a63;
+    padding-bottom: 1rem;
+}
+
+.team .team-member p{
+    font-size: 1rem;
+    font-weight: 500;
+    color: gray;
+    padding-bottom: 5rem;
+}
+
+/* about */
+.about{
+    margin: 10rem 0;
+}
+
+.about .content{
+    width: 40%;
+}
+
+.about .content-left h2{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #3a4a63;
+    margin-bottom: 1rem;
+}
+
+.about .content-left p{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: gray;
+    margin-bottom: 1rem;
+}
+
+.about .content-left button{
+    background-color: #3a4a63;
+    border: none;
+    color: #fff;
+}
+
+.about .content-left button:hover{
+    background-color: #fd871f;
+    transition:0.3s ease-in;
+}
+
+.about .content-right .content-color{
+    background-color: #fd871f;
+    color: #fff;
+    padding: 1.5rem;
+}
+
+.about .content-right .content-color h4{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    cursor: pointer;
+}
+
+.about .content-right .content-color p{
+    font-size: 0.82rem;
+}
+
+.about .content-right a{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #3a4a63;
+    display: block;
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.about .content-right a:hover{
+    color: #8a94ab;
+}
+
+/* project */
+.project{
+    margin: 4rem 0;
+}
+
+.project h2{
+    font-size: 2.5rem;
+    color: #3a4a63;
+    margin-bottom: 1rem;
+}
+
+.project p{
+    width: 45%;
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: gray;
+    margin-bottom: 1rem;
+}
+
+.project .project-area .project-content{
+    width: 31%;
+    margin-top: 2rem;
+}
+
+.project .project-area .project-content img{
+    width: 100%;
+}
+
+.project .project-area .project-content h4{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #3a4a63;
+}
+
+.project .project-area .project-content h4 span{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: gray;
+    margin-left: 2rem;
+    text-transform: uppercase;
+}
+
+.project .project-area .project-content p{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.project .project-area .project-content a{
+    text-decoration: none;
+    color: #8a94ab;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.project .project-area .project-content a:hover{
+    color: gray;
+}
+
+/* pricing */
+.pricing{
+    margin: 20rem 0;
+}
+
+.pricing .pricing-list{
+    width: 31%;
+}
+
+.pricing .pricing-list .fa{
+    font-size: 2rem;
+    color: gray;
+    margin-bottom: 1rem;
+}
+
+.pricing .pricing-list h3{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #3a4a63;
+    margin-bottom: 1rem;
+}
+
+.pricing .pricing-list h3 span{
+    font-size: 1rem;
+    color: gray;
+}
+
+.pricing .pricing-list p{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: gray;
+    margin-bottom: 1rem;
+}
+
+.pricing .pricing-list ul{
+    list-style: none;
+    margin-bottom: 3rem;
+}
+
+.pricing .pricing-list ul li{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #8a94ab;
+    margin-bottom: 1rem;
+}
+
+.pricing .pricing-list button{
+    width: 8rem;
+    height: 2.5rem;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #3a4a63;
+    text-transform: uppercase;
+}
+
+.pricing .pricing-list button:hover{
+    background-color: #fd871f;
+    color: #fff;
+}
+
+/* services */
+.services{
+    margin: 5rem 0;
+}
+
+.services h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #3a4a63;
+    margin-bottom: 1rem;
+}
+
+.services p{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: gray;
+    width: 45%;
+    margin-bottom: 2rem;
+}
+
+.services .services-item .services-list{
+    width: 33%;
+    padding: 2rem;
+    margin-top: 1rem;
+}
+
+.services .services-item .services-list:hover {
+    background-color: #fd871f;
+}
+
+.services .services-item .services-list .fa{
+    font-size: 1.8rem;
+    color: gray;
+    margin-bottom: 1rem;
+}
+
+.services .services-item .services-list h3{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #3a4a63;
+    margin-bottom: 1rem;
+}
+
+.services .services-item .services-list p{
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: gray;
+    margin-bottom: 1rem;
+}
+
+/* contact */
+.contact{
+    margin: 5rem 0;
+}
+
+.contact .contact-list{
+    width: 30%;
+}
+
+.contact .contact-list h3{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.contact .contact-list h3 a{
+    text-decoration: none;
+    color: #3a4a63;
+}
+
+.contact .contact-list h3 a:hover{
+    color: #8a94ab;
+}
+
+.contact .contact-list h3 span{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: gray;
+    margin-left: 1rem;
+    font-weight: 400;
+}
+
+.contact .contact-list p{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: gray;
+    margin-bottom: 1rem;
+}
+
+.contact .contact-list ul{
+    list-style: none;
+}
+
+.contact .contact-list li{
+    font-size: 0.9rem;
+    color: gray;
+}
+
+.contact .contact-list li i{
+    color: #20dfe6;
+    margin-right: 0.5rem;
+}
+
+.full-width-map{
+    width: 100%;
+}
+
+.full-width-map iframe{
+    width: 100%;
+}
+
+/* footer */
+footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer ul{
+    list-style: none;
+    margin-right: 5rem;
+    padding: 5rem 0;
+}
+
+footer ul li{
+    margin-bottom: 1rem;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #8a94ab;
+}
+
+/* sub footer */
+
+.sub-footer{ 
+    padding: 1rem 0;
+}
+
+.sub-footer p{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: gray;
+}
+
+.sub-footer p a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #3a4a63;
+}
+
+.sub-footer p a:hover{
+    color: #8a94ab;
+}
+
+
+@media (max-width:992px){
+    .team{
+        margin: 5rem 0;
+    }
+
+    .team .team-member{
+        width: 45%;
+    }
+
+    .about .content{
+        width: 50%;
+    }
+}
+
+@media (max-width: 767px){
+    .headings{
+        margin-top: 2%;
+    }
+
+    .headings h1{
+        font-size: 3rem;
+    }
+
+    .team .team-member{
+        width: 100%;
+    }
+
+    .team .team-member h2{
+        margin-top: 1rem;
+        padding-bottom: 0.2rem;
+    }
+
+    .about .content{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .project p{
+        width: 100%;
+    }
+
+    .project .project-area .project-content{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .pricing .pricing-list{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .services p{
+        width: 100%;
+    }
+
+    .services .services-item .services-list{
+        width: 100%;
+    }
+
+    .contact .contact-list{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    footer{
+        display: block;
+    }
+
+    footer ul{
+        padding: 0.5rem 0;
+    }
+}
